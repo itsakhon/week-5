@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Prompt&display=swap');
+body {
+    font-family: "Prompt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+ * {
+    color:rgb(0, 114, 213);
+ }
+
+ p {
+    font-size: 32pt;
+ }
+
+#name { 
+    font-size: 40pt;
+    color: aquamarine;
+    background-color: black;
+    padding: 20px 20px 50px 100px;
+    margin: 20px 100px 20px 100px;
+    text-align: center;
+    /* padding: 20px; */
+    /* padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 20px; */
+}
+.name {
+    font-size: 28pt;
+    color: rgb(255, 0, 0);
+}
+
+p.text {
+    font-size: 10pt;
+    color: rgb(255, 0, 0);
+}
+
+.btn {
+    background-color: rgb(1, 31, 255);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 15px 25px 15px 25px;
+    margin: 10px;
+    border: rgb(31, 0, 133) solid 2px;
+}
+.btn:hover {
+    background-color: rgb(1, 158, 255);
+    color: rgb(255, 3, 3);
+    font-size: 24px;
+    padding: 15px 25px 15px 25px;
+    margin: 10px;
+    border: rgb(0, 89, 133) solid 2px;
+}
+.btn:active {
+    background-color: rgb(58, 0, 173);
+    color: rgb(0, 253, 38);
+    font-size: 24px;
+    padding: 15px 25px 15px 25px;
+    margin: 10px;
+    border: rgb(42, 2, 103) solid 2px;
+}
+
+.inline {
+    display: inline;
+    background-color: rgb(213, 213, 213);
+    padding: 20px;
+    margin-right: 5px;
+}
+.box {
+    background-color: rgb(213, 213, 213);
+    padding: 20px;
+    margin-right: 5px;
+}
+.flex-box{ 
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly;
+    justify-content: space-around; */
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    row-gap: 10px;
+  }
+  
+  @media (max-width: 1200px) { /* Adjust width as needed */
+    .grid-box {
+      grid-template-columns: repeat(2, 1fr); /* Changes to 2 columns on smaller screens */
+    }
+  }
